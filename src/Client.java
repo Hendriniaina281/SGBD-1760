@@ -8,7 +8,7 @@ public class Client {
         ClientTraitement cliTrait = null;
         
         try{
-            cliTrait = new ClientTraitement("127.0.0.1",2022);
+            cliTrait = new ClientTraitement("127.0.0.1",1760);
             cliTrait.commandRequest();
         }catch(Exception ex){
             ex.printStackTrace();

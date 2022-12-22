@@ -1,0 +1,41 @@
+-create table Personne ( Nom,Prenom )
+-create table Olombelona ( Nom,Prenom )
+-create table Produit ( idPdt,idCl,Produit )
+-create table Client ( idCl,Nom,Prenom )
+
+-show table
+
+-insert into Personne values( Jean,Marc )
+-insert into Personne values( Marie,Jeanne )
+-insert into Personne values( Luc,Martin )
+
+
+-insert into Olombelona values( Jean,Marc )
+-insert into Olombelona values( Marie,Jeanne )
+-insert into Olombelona values( Aina,Soa )
+
+-insert into Client values( 01,Jean,Marc )
+-insert into Client values( 02,Marie,Jeanne )
+
+-insert into Produit values( 01,02,huile )
+-insert into Produit values( 02,01,eau )
+
+-select * from Personne
+-select * from Personne where Nom = Marc
+-select * from Client where Nom = Marie
+
+-select Prenom from Olombelona
+-select idPdt,idCl from Produit
+
+-produitcart ( Personne,Client ) 
+
+-intersection ( Olombelona,Personne )
+
+-get * from Client join Produit on Client.idCl = Produit.idCl
+
+-delete from Personne
+
+
+
+
+ 

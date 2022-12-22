@@ -1,4 +1,6 @@
-Les requetes:
+SGBD 1760
+
+Fonctionnalites:
 	-create table
 	-insert
 	-projection
@@ -9,30 +11,4 @@ Les requetes:
 	-jointure
 	-intersection
 
-Syntaxe:
-
--create: create table Personne ( nom,prenom )
-
--insert:-insert into Personne values( Hendry,Niana )
-	-insert into Personne values( Christian,Tooj )
-	-insert into Personne values( Miandrison,Hasinjo )
-	-insert into Personne values( Mirantsoa,Fanyah )
-
--projection:-select nom from Personne
-	    -select prenom from Personne
-	    -select nom,prenom from Personne
-
--select:-select * from Personne
-	-select * from Personne where nom = Hendry
-	-select * from Personne where prenom = Tooj
-
--delete:-delete from Personne
-
--show: -show table
-
--produit cart : produitcart ( Personne,Client ) 
-
--jointure: get * from Client join Produit on id_Client = Produit.id_Client 
-
--intersection: intersection ( Olombelona,Client )
 

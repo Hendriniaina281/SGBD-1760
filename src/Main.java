@@ -9,9 +9,9 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws Exception{
-        Function fu = new Function();
-        //Table ta = fu.showTable("show table");
-        //fu.print(ta);
+        /*Function fu = new Function();
+        Table ta = fu.select("select * from Personne where Nom = Marc ");
+        fu.print(ta);*/
         //String str = fu.createTable("create table Olombelona ( idClient,Nom,Prenom,Adresse )");
         //String strs = fu.insert("insert into Client values( 02,Hendry,Niaina,Andoharanofotsy )");
         //String str = fu.delete("delete from personne");

@@ -3,12 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/P15A-13-Hendry/Documents/NetBeansProjects/SGBD_1760/src/Main.java</file>
-            <file>file:/C:/Users/P15A-13-Hendry/Documents/NetBeansProjects/SGBD_1760/src/ServerTraitement.java</file>
-            <file>file:/C:/Users/P15A-13-Hendry/Documents/NetBeansProjects/SGBD_1760/src/Server.java</file>
-            <file>file:/C:/Users/P15A-13-Hendry/Documents/NetBeansProjects/SGBD_1760/src/Writer.java</file>
-            <file>file:/C:/Users/P15A-13-Hendry/Documents/NetBeansProjects/SGBD_1760/src/Read.java</file>
-            <file>file:/C:/Users/P15A-13-Hendry/Documents/NetBeansProjects/SGBD_1760/src/Function.java</file>
+            <file>file:/C:/Users/Hendry/Documents/NetBeansProjects/SGBD-1760/src/Server.java</file>
+            <file>file:/C:/Users/Hendry/Documents/NetBeansProjects/SGBD-1760/src/Writer.java</file>
+            <file>file:/C:/Users/Hendry/Documents/NetBeansProjects/SGBD-1760/src/Table.java</file>
+            <file>file:/C:/Users/Hendry/Documents/NetBeansProjects/SGBD-1760/src/Client.java</file>
+            <file>file:/C:/Users/Hendry/Documents/NetBeansProjects/SGBD-1760/src/Main.java</file>
+            <file>file:/C:/Users/Hendry/Documents/NetBeansProjects/SGBD-1760/src/ClientTraitement.java</file>
+            <file>file:/C:/Users/Hendry/Documents/NetBeansProjects/SGBD-1760/src/Read.java</file>
+            <file>file:/C:/Users/Hendry/Documents/NetBeansProjects/SGBD-1760/src/ServerTraitement.java</file>
+            <file>file:/C:/Users/Hendry/Documents/NetBeansProjects/SGBD-1760/src/Function.java</file>
         </group>
     </open-files>
 </project-private>

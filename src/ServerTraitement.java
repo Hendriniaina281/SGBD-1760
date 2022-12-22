@@ -88,8 +88,7 @@ public class ServerTraitement {
                     table = fu.intersection(commande);
                     this.getObjectOutput().writeObject(table);
                     this.getObjectOutput().flush();
-                }else if(!arrayCom[0].equals("select") && !arrayCom[0].equals("create") && !arrayCom[0].equals("insert") && !arrayCom[0].equals("produitcart") &&
-                        !arrayCom[0].equals("show") && !arrayCom[0].equals("delete") && !arrayCom[0].equals("get") && !arrayCom[0].equals("intersection")){
+                }else{
                     response = fu.erreur();
                     this.getObjectOutput().writeObject(response);
                     this.getObjectOutput().flush(); 

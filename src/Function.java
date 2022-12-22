@@ -18,7 +18,7 @@ public class Function {
     }
     /*********************************Fonction affichant tout les tables*********************************************************/
     public Table showTable(String request){
-        File folder = new File("E:\\Tables\\");
+        File folder = new File("C:\\Tables");
         File[] listeFile = folder.listFiles();
         
         Table table = new Table();
@@ -32,7 +32,7 @@ public class Function {
     }
     
     public ArrayList<String> getNomTable(){
-        File folder = new File("E:\\Tables\\");
+        File folder = new File("C:\\Tables\\");
         File[] listeFile = folder.listFiles();
         ArrayList<String> array = new ArrayList<>();
         Table tab = new Table();
@@ -51,7 +51,7 @@ public class Function {
     /***************************************Fonction supprimant tous les elemens de la table****************************************************/
     public String delete(String request) throws Exception{
         String[] req = request.split(" ");
-        PrintWriter writer = new PrintWriter("E:\\Tables\\"+req[2]+".txt");
+        PrintWriter writer = new PrintWriter("C:\\Tables\\"+req[2]+".txt");
         writer.print("");
         writer.close();
         
@@ -67,13 +67,13 @@ public class Function {
         String res = new String();
         try {
             
-            File dossier = new File("E:\\Tables");
+            File dossier = new File("C:\\Tables");
             
             if(!dossier.exists()){
                 dossier.mkdirs();
             }
             
-            File file = new File("E:\\Tables\\"+wordRequest[2]+".txt");
+            File file = new File("C:\\Tables\\"+wordRequest[2]+".txt");
             if(!file.exists()){
                 file.createNewFile();
             }
@@ -86,7 +86,7 @@ public class Function {
             allTable.add(table);
             
             Writer write = new Writer();
-            write.write("E:\\Tables\\"+wordRequest[2], column);
+            write.write("C:\\Tables\\"+wordRequest[2], column);
             
             
             res = "Creer";
@@ -107,7 +107,7 @@ public class Function {
         String[] values = wordRequest[4].split(",");
         System.out.println("reoo"+values[0]);
         Writer write = new Writer();
-        write.write("E:\\Tables\\"+wordRequest[2],values);
+        write.write("C:\\Tables\\"+wordRequest[2],values);
         
         res = "Valeur inserer";
         
@@ -139,7 +139,7 @@ public class Function {
         String str = "";
 
         Read read = new Read();
-        ArrayList<String> array = read.read("E:\\Tables\\"+req[3]);
+        ArrayList<String> array = read.read("C:\\Tables\\"+req[3]);
         //System.out.println("arrayname: "+array);
         String[] namecol = array.get(0).split(",");
         
@@ -188,7 +188,7 @@ public class Function {
         Table table = new Table();
         //table.setNom(wordRequest[3]);
         Read read = new Read();
-        ArrayList<String> readString = read.read("E:\\Tables\\"+wordRequest[3]);
+        ArrayList<String> readString = read.read("C:\\Tables\\"+wordRequest[3]);
         ArrayList<String> array = new ArrayList<>();
         String[] nameCol = readString.get(0).split(",");
         //System.out.println("ouaoooo: "+nameCol[0]);
@@ -213,6 +213,7 @@ public class Function {
                         for(int x = 0;x<value.length;x++){
                             str = value[x]+",";
                             array.add(str);
+                            
                         }
                         
                     }
@@ -243,14 +244,14 @@ public class Function {
         
         Table tabPers = new Table();
         Read readPers = new Read();
-        arrayPers = readPers.read("E:\\Tables\\"+table[0]);
+        arrayPers = readPers.read("C:\\Tables\\"+table[0]);
         tabPers.setColumnValue(arrayPers);
         //System.out.println("table: "+arrayPers);
         
         
         Table tabOlona = new Table();
         Read readOlona = new Read();
-        arrayOlona = readOlona.read("E:\\Tables\\"+table[1]);
+        arrayOlona = readOlona.read("C:\\Tables\\"+table[1]);
         tabOlona.setColumnValue(arrayOlona);
         //System.out.println("kalolo: "+arrayOlona);
         
@@ -277,13 +278,13 @@ public class Function {
 
         Table tabPers = new Table();
         Read readPers = new Read();
-        ArrayList<String> arrayPers = readPers.read("E:\\Tables\\"+req[3]);
+        ArrayList<String> arrayPers = readPers.read("C:\\Tables\\"+req[3]);
         tabPers.setColumnValue(arrayPers);
         System.out.println("nataony"+arrayPers);
 
         Table tabOlona = new Table();
         Read readOlona = new Read();
-        ArrayList<String> arrayOlona = readOlona.read("E:\\Tables\\"+req[5]);
+        ArrayList<String> arrayOlona = readOlona.read("C:\\Tables\\"+req[5]);
         tabOlona.setColumnValue(arrayOlona);
         
         for(int i = 0;i<tabOlona.getColumnValue().size();i++){
@@ -313,12 +314,12 @@ public class Function {
 
         Table tabPers = new Table();
         Read readPers = new Read();
-        ArrayList<String> arrayPers = readPers.read("E:\\Tables\\"+table[0]);
+        ArrayList<String> arrayPers = readPers.read("C:\\Tables\\"+table[0]);
         tabPers.setColumnValue(arrayPers);
 
         Table tabOlona = new Table();
         Read readOlona = new Read();
-        ArrayList<String> arrayOlona = readOlona.read("E:\\Tables\\"+table[1]);
+        ArrayList<String> arrayOlona = readOlona.read("C:\\Tables\\"+table[1]);
         tabOlona.setColumnValue(arrayOlona);
         //System.out.println("arrayOlona"+table[1]);
 

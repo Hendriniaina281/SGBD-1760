@@ -10,7 +10,7 @@ public class Server {
     public static void main(String[] args) {
         ServerTraitement serTrait = null;
         try{
-            serTrait = new ServerTraitement(2022);
+            serTrait = new ServerTraitement(1760);
             serTrait.getCommandRequest();
         }catch(Exception ex){
            ex.printStackTrace(); 
